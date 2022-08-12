@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import { applyMediaQuery } from 'styles/mediaQuery';
 
 const StyledRoot = styled.div`
-  width: 70vw;
-  height: 30vw;
-
+  width: 100vw;
+  min-height: 100vh;
+  background-color: ${({ theme: { color } }) => color.LigterBlue};
   .img {
     width: 10rem;
     height: 3rem;
@@ -21,4 +21,10 @@ const Text = styled.p`
   font-size: ${({ theme: { font } }) => font.size.regular};
 `;
 
-export { StyledRoot, Text };
+const SubText = styled.p`
+  font-family: 'Noto Sans';
+  font-size: ${({ theme: { font } }) => font.size.small};
+  color: ${({ theme: { color } }) => color.grey};
+`;
+
+export { StyledRoot, Text, SubText };

@@ -6,7 +6,7 @@ import { StyledRoot, Text } from './style';
 function Login() {
   return (
     <StyledRoot>
-      <Text>Login Page</Text>
+      <Text>Login Page!</Text>
       <img src={MainLogo} alt="로고" />
     </StyledRoot>
   );

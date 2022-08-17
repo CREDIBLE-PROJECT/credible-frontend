@@ -1,5 +1,6 @@
 /* Logo */
 export { default as MainLogo } from './Logo/OfficialLogo.svg';
+export { default as MainImage } from './Logo/MainImage.svg';
 /* Profile */
 export { default as Profile } from './Profile/ProfileImg.svg';
 /* Report */

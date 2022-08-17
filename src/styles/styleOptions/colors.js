@@ -4,6 +4,7 @@ const colors = {
   /* blue */
   lighterBlue: '#F1F8FF',
   darkerBlue: '#2BA0FF',
+  blue: '#0784CA',
   /* grey */
   grey: '#838383',
 };

@@ -209,15 +209,6 @@ const ThirdHorizon = styled.hr`
   top: 77.8rem;
 `;
 
-const DetailText = styled.p`
-  color: ${({ theme: { color } }) => color.blue};
-  font-size: ${({ theme: { font } }) => font.size.regular};
-  font-weight: ${({ theme: { font } }) => font.weight.bold};
-  position: absolute;
-  left: 38.4rem;
-  top: 80.8rem;
-`;
-
 export {
   StyledRoot,
   FirstHorizon,
@@ -229,5 +220,4 @@ export {
   ReportText,
   SecondHorizon,
   ThirdHorizon,
-  DetailText,
 };

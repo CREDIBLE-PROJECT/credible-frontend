@@ -1,6 +1,5 @@
 /* eslint-disable import/no-unresolved */
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import { Receipt, Pig } from 'assets';
 import moment from 'moment';
 import {
@@ -14,12 +13,9 @@ import {
   ReportText,
   SecondHorizon,
   ThirdHorizon,
-  DetailText,
 } from './style';
 
 function Result() {
-  const navigate = useNavigate();
-
   return (
     <StyledRoot>
       <ReportMain>
@@ -70,14 +66,6 @@ function Result() {
           <p className="totalPercent">47.0%</p>
         </ReportItem>
         <ThirdHorizon />
-        <DetailText
-          role="presentation"
-          onClick={() => {
-            navigate('/detail');
-          }}
-        >
-          항목 별 더 자세히 확인하기 →
-        </DetailText>
       </ReportContent>
     </StyledRoot>
   );

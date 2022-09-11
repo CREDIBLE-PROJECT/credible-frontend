@@ -67,6 +67,7 @@ const ReportTitle = styled.div`
 
 const ReportItem = styled.div`
   font-weight: ${({ theme: { font } }) => font.weight.light};
+  color: ${({ theme: { color } }) => color.grey};
 
   .item {
     position: absolute;
@@ -103,7 +104,7 @@ const ReportItem = styled.div`
 // `;
 
 const FirstHorizon = styled.hr`
-  width: ${props => props.width};
+  width: 42.6rem;
   border: dashed 0.05rem ${({ theme: { color } }) => color.lighterGrey};
 
   position: absolute;
@@ -191,7 +192,7 @@ const ReportText = styled.div`
 `;
 
 const SecondHorizon = styled.hr`
-  width: ${props => props.width};
+  width: 42.6rem;
   border: dashed 0.05rem ${({ theme: { color } }) => color.lighterGrey};
 
   position: absolute;
@@ -200,7 +201,7 @@ const SecondHorizon = styled.hr`
 `;
 
 const ThirdHorizon = styled.hr`
-  width: ${props => props.width};
+  width: 42.6rem;
   border: dashed 0.05rem ${({ theme: { color } }) => color.lighterGrey};
 
   position: absolute;

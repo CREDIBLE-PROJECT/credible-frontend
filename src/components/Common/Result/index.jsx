@@ -39,7 +39,7 @@ function Result() {
           <p className="item">항목</p>
           <p className="percent">상위%</p>
         </ReportItem>
-        <FirstHorizon width="30%" />
+        <FirstHorizon />
         <ReportText>
           <p className="report1">마지막 거래 이후 경과된 개월 수</p>
           <p className="percent1">35.4%</p>
@@ -64,12 +64,12 @@ function Result() {
           <p className="report6">최근 6개월 간 문의 건수</p>
           <p className="percent6">70.1%</p>
         </ReportText>
-        <SecondHorizon width="30%" />
+        <SecondHorizon />
         <ReportItem>
           <p className="total">Total</p>
           <p className="totalPercent">47.0%</p>
         </ReportItem>
-        <ThirdHorizon width="30%" />
+        <ThirdHorizon />
         <DetailText
           role="presentation"
           onClick={() => {

@@ -9,6 +9,7 @@ import {
   ProfileBox,
   ProfileText,
   ProfileImg,
+  DetailText,
   CauseContent,
   CauseText,
   CauseMain,
@@ -53,6 +54,14 @@ function Report() {
         <ProfileImg src={Profile} alt="프로필 이미지" />
       </ProfileBox>
       <Result />
+      <DetailText
+        role="presentation"
+        onClick={() => {
+          navigate('/details');
+        }}
+      >
+        항목 별 더 자세히 확인하기 →
+      </DetailText>
       <CauseContent>
         <CauseText>
           <pre>김이화님의 </pre>

@@ -9,7 +9,7 @@ const StyledRoot = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: ${({ theme: { color } }) => color.lighterBlue};
+  background-color: ${({ theme: { color } }) => color.lightestBlue};
 
   ${applyMediaQuery('mobile')} {
     display: block;
@@ -49,10 +49,10 @@ const LoginText = styled.p`
 `;
 
 const ImgText = styled.p`
-  font-family: 'Noto Sans';
+  font-family: 'Noto Sans', [monospace];
   font-weight: ${({ theme: { font } }) => font.weight.bold};
   font-size: ${({ theme: { font } }) => font.size.medium};
-  color: ${({ theme: { color } }) => color.darkerBlue};
+  color: ${({ theme: { color } }) => color.blue};
 
   position: absolute;
   top: 25vw;

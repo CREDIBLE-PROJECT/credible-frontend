@@ -30,14 +30,12 @@ const Text = styled.p`
   font-size: ${({ theme: { font } }) => font.size.regular};
 `;
 
-const LoginText = styled.p`
+const LoginText = styled.div`
+  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  position: relative;
-  left: 41vw;
-
   font-family: 'Noto Sans', [monospace];
   font-size: ${({ theme: { font } }) => font.size.small};
   color: ${({ theme: { color } }) => color.grey};

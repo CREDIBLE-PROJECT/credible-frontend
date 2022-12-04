@@ -27,38 +27,6 @@ const LoginText = styled.div`
   }
 `;
 
-const ProfileBox = styled.div`
-  display: flex;
-  flex-direction: row;
-  /* justify-content: space-between; */
-  align-items: center;
-  margin: 3rem 3rem 0rem 3rem;
-`;
-
-const ProfileText = styled.div`
-  display: flex;
-  flex-direction: column;
-  font-family: 'Noto Sans', [monospace];
-  margin-left: 2rem;
-  margin-right: 2rem;
-
-  .small {
-    font-size: ${({ theme: { font } }) => font.size.semiSmall};
-    font-weight: ${({ theme: { font } }) => font.weight.bold};
-    margin-bottom: 1.3rem;
-  }
-
-  .regular {
-    font-size: ${({ theme: { font } }) => font.size.semiMedium};
-    font-weight: ${({ theme: { font } }) => font.weight.bold};
-  }
-`;
-
-const ProfileImg = styled.img`
-  width: 7rem;
-  height: 7rem;
-`;
-
 const DetailText = styled.p`
   color: ${({ theme: { color } }) => color.blue};
   font-size: ${({ theme: { font } }) => font.size.regular};
@@ -175,31 +143,28 @@ const TipDetail = styled.div`
   }
 `;
 
-const TipExpect = styled.div`
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  left: 108.8rem;
-  top: 101rem;
-  font-family: 'Noto Sans', [monospace];
-  font-size: ${({ theme: { font } }) => font.size.regular};
-  font-weight: ${({ theme: { font } }) => font.weight.semiBold};
+// const TipExpect = styled.div`
+//   display: flex;
+//   flex-direction: row;
+//   position: absolute;
+//   left: 108.8rem;
+//   top: 101rem;
+//   font-family: 'Noto Sans', [monospace];
+//   font-size: ${({ theme: { font } }) => font.size.regular};
+//   font-weight: ${({ theme: { font } }) => font.weight.semiBold};
 
-  .black {
-    margin-right: 0.6rem;
-  }
+//   .black {
+//     margin-right: 0.6rem;
+//   }
 
-  .blue {
-    color: ${({ theme: { color } }) => color.blue};
-  }
-`;
+//   .blue {
+//     color: ${({ theme: { color } }) => color.blue};
+//   }
+// `;
 
 export {
   StyledRoot,
   LoginText,
-  ProfileBox,
-  ProfileText,
-  ProfileImg,
   DetailText,
   CauseText,
   CauseContent,
@@ -210,5 +175,4 @@ export {
   TipImg,
   TipMainText,
   TipDetail,
-  TipExpect,
 };

@@ -88,6 +88,7 @@ const ReportItem = styled.div`
   }
 
   .totalPercent {
+    font-weight: ${({ theme: { font } }) => font.weight.bold};
     position: absolute;
     left: 59.5rem;
     top: 75.2rem;
@@ -117,8 +118,12 @@ const ReportText = styled.div`
   flex-direction: row;
   color: ${({ theme: { color } }) => color.lighterGrey};
   font-size: ${({ theme: { font } }) => font.size.small};
+  cursor: pointer;
 
   .report1 {
+    background-color: transparent;
+    color: ${({ theme: { color } }) => color.lighterGrey};
+    font-size: ${({ theme: { font } }) => font.size.small};
     position: absolute;
     left: 20.5rem;
     top: 40.2rem;
@@ -131,6 +136,9 @@ const ReportText = styled.div`
   }
 
   .report2 {
+    background-color: transparent;
+    color: ${({ theme: { color } }) => color.lighterGrey};
+    font-size: ${({ theme: { font } }) => font.size.small};
     position: absolute;
     left: 20.5rem;
     top: 45.2rem;
@@ -143,6 +151,9 @@ const ReportText = styled.div`
   }
 
   .report3 {
+    background-color: transparent;
+    color: ${({ theme: { color } }) => color.lighterGrey};
+    font-size: ${({ theme: { font } }) => font.size.small};
     position: absolute;
     left: 20.5rem;
     top: 50.2rem;
@@ -155,6 +166,9 @@ const ReportText = styled.div`
   }
 
   .report4 {
+    background-color: transparent;
+    color: ${({ theme: { color } }) => color.lighterGrey};
+    font-size: ${({ theme: { font } }) => font.size.small};
     position: absolute;
     left: 20.5rem;
     top: 55.2rem;
@@ -167,6 +181,9 @@ const ReportText = styled.div`
   }
 
   .report5 {
+    background-color: transparent;
+    color: ${({ theme: { color } }) => color.lighterGrey};
+    font-size: ${({ theme: { font } }) => font.size.small};
     position: absolute;
     left: 20.5rem;
     top: 60.2rem;
@@ -179,6 +196,9 @@ const ReportText = styled.div`
   }
 
   .report6 {
+    background-color: transparent;
+    color: ${({ theme: { color } }) => color.lighterGrey};
+    font-size: ${({ theme: { font } }) => font.size.small};
     position: absolute;
     left: 20.5rem;
     top: 65.2rem;

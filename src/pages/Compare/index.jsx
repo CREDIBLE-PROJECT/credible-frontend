@@ -1,14 +1,10 @@
 /* eslint-disable import/no-unresolved */
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Menu } from 'components';
-import { Profile } from 'assets';
+import { Menu, CommonProfile } from 'components';
 import {
   StyledRoot,
   LoginText,
-  ProfileBox,
-  ProfileText,
-  ProfileImg,
   CompareMainBox,
   CompareMainText,
   CompareBox,
@@ -19,10 +15,6 @@ import {
   MeanScoreBox,
   MeanScoreText,
   MeanScore,
-  CompareResult,
-  MainMajorCompare,
-  MajorCompareText,
-  MajorCompareBox,
 } from './style';
 
 function Compare() {
@@ -30,7 +22,7 @@ function Compare() {
   return (
     <StyledRoot>
       <LoginText>
-        <p
+        {/* <p
           role="presentation"
           onClick={() => {
             navigate('/login');
@@ -45,38 +37,39 @@ function Compare() {
           }}
         >
           회원가입
+        </p> */}
+        <p
+          role="presentation"
+          onClick={() => {
+            navigate('/login');
+          }}
+        >
+          로그아웃
         </p>
       </LoginText>
       <Menu />
-      <ProfileBox>
-        <ProfileText>
-          <p className="small">안녕하세요</p>
-          <p className="regular">김이화 님</p>
-        </ProfileText>
-        <ProfileImg src={Profile} alt="프로필 이미지" />
-      </ProfileBox>
-
+      <CommonProfile />
       <CompareMainBox>
         <CompareMainText>
-          김이화님과 같은 20대 여성들의 평균 신용점수는?
+          김사보님과 연령대가 비슷한 이용자들과 신용점수 비교
         </CompareMainText>
         <CompareBox>
           <CompareMain>
             <MyScoreBox>
               <MyScoreText>김이화님의 신용점수</MyScoreText>
-              <MyScore>643점</MyScore>
+              <MyScore>753점</MyScore>
             </MyScoreBox>
             <MeanScoreBox>
-              <MeanScoreText>20대 여성의 평균 신용점수</MeanScoreText>
-              <MeanScore>738점</MeanScore>
+              <MeanScoreText>20대 여성 중 당신의 신용점수</MeanScoreText>
+              <MeanScore>상위 47%</MeanScore>
             </MeanScoreBox>
           </CompareMain>
-          <CompareResult>
+          {/* <CompareResult>
             김이화님은 20대 여성 중 상위 10%에 속해있습니다.
-          </CompareResult>
+          </CompareResult> */}
         </CompareBox>
       </CompareMainBox>
-      <MainMajorCompare>
+      {/* <MainMajorCompare>
         <MajorCompareText>나의 주요 비교항목</MajorCompareText>
         <MajorCompareBox>
           <p className="main">1. 최근 6개월간 문의 건수 많음 </p>
@@ -92,7 +85,7 @@ function Compare() {
           </ol>
           <p className="sub">→ 상세 설명 보러가기</p>
         </MajorCompareBox>
-      </MainMajorCompare>
+      </MainMajorCompare> */}
     </StyledRoot>
   );
 }

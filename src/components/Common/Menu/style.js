@@ -29,6 +29,7 @@ const MenuText = styled.p`
   align-items: center;
   font-family: 'Noto Sans';
   font-size: ${({ theme: { font } }) => font.size.semiSmall};
+  cursor: pointer;
 
   p {
     margin-right: 8rem;

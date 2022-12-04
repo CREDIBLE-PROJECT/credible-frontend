@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const StyledRoot = styled.div`
   width: 100vw;
-  height: 95vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   background-color: ${({ theme: { color } }) => color.lightestBlue};
@@ -25,38 +25,6 @@ const LoginText = styled.div`
   }
 `;
 
-const ProfileBox = styled.div`
-  display: flex;
-  flex-direction: row;
-  /* justify-content: space-between; */
-  align-items: center;
-  margin: 3rem 3rem 0rem 3rem;
-`;
-
-const ProfileText = styled.div`
-  display: flex;
-  flex-direction: column;
-  font-family: 'Noto Sans', [monospace];
-  margin-left: 2rem;
-  margin-right: 2rem;
-
-  .small {
-    font-size: ${({ theme: { font } }) => font.size.semiSmall};
-    font-weight: ${({ theme: { font } }) => font.weight.bold};
-    margin-bottom: 1.3rem;
-  }
-
-  .regular {
-    font-size: ${({ theme: { font } }) => font.size.semiMedium};
-    font-weight: ${({ theme: { font } }) => font.weight.bold};
-  }
-`;
-
-const ProfileImg = styled.img`
-  width: 7rem;
-  height: 7rem;
-`;
-
 const CompareMainBox = styled.div`
   display: flex;
   flex-direction: column;
@@ -75,7 +43,7 @@ const CompareMainText = styled.div`
 
 const CompareBox = styled.div`
   width: 80vw;
-  height: 50vh;
+  height: 37vh;
   background: ${({ theme: { color } }) => color.white};
   border-radius: 1.5rem;
   position: absolute;
@@ -136,73 +104,70 @@ const MeanScore = styled.p`
   font-weight: ${({ theme: { font } }) => font.weight.bold};
 `;
 
-const CompareResult = styled.div`
-  font-size: ${({ theme: { font } }) => font.size.regular};
-  display: flex;
-  padding-top: 6rem;
-  align-items: center;
-  font-family: 'Noto Sans';
-  font-weight: ${({ theme: { font } }) => font.weight.bold};
-  flex-direction: column;
-`;
+// const CompareResult = styled.div`
+//   font-size: ${({ theme: { font } }) => font.size.regular};
+//   display: flex;
+//   padding-top: 6rem;
+//   align-items: center;
+//   font-family: 'Noto Sans';
+//   font-weight: ${({ theme: { font } }) => font.weight.bold};
+//   flex-direction: column;
+// `;
 
-const MainMajorCompare = styled.div`
-  flex-direction: row;
-  font-family: 'Noto Sans', [monospace];
-  font-size: ${({ theme: { font } }) => font.size.semiMedium};
-  font-weight: ${({ theme: { font } }) => font.weight.bold};
-  position: absolute;
-  left: 15rem;
-  top: 88rem;
-`;
+// const MainMajorCompare = styled.div`
+//   flex-direction: row;
+//   font-family: 'Noto Sans', [monospace];
+//   font-size: ${({ theme: { font } }) => font.size.semiMedium};
+//   font-weight: ${({ theme: { font } }) => font.weight.bold};
+//   position: absolute;
+//   left: 15rem;
+//   top: 78rem;
+// `;
 
-const MajorCompareText = styled.div`
-  display: flex;
-  flex-direction: row;
-  font-family: 'Noto Sans', [monospace];
-  font-size: ${({ theme: { font } }) => font.size.semiMedium};
-  font-weight: ${({ theme: { font } }) => font.weight.bold};
-  left: 15rem;
-  top: 95rem;
-  margin-bottom: 3rem;
-`;
+// const MajorCompareText = styled.div`
+//   display: flex;
+//   flex-direction: row;
+//   font-family: 'Noto Sans', [monospace];
+//   font-size: ${({ theme: { font } }) => font.size.semiMedium};
+//   font-weight: ${({ theme: { font } }) => font.weight.bold};
+//   left: 15rem;
+//   top: 95rem;
+//   margin-bottom: 3rem;
+// `;
 
-const MajorCompareBox = styled.div`
-  width: 80vw;
-  height: 45vh;
-  background: ${({ theme: { color } }) => color.white};
-  border-radius: 1.5rem;
-  display: flex;
-  flex-direction: column;
+// const MajorCompareBox = styled.div`
+//   width: 80vw;
+//   height: 45vh;
+//   background: ${({ theme: { color } }) => color.white};
+//   border-radius: 1.5rem;
+//   display: flex;
+//   flex-direction: column;
 
-  .main {
-    color: ${({ theme: { color } }) => color.blue};
-    font-size: ${({ theme: { font } }) => font.size.semiMedium};
-    margin-left: 6.5rem;
-    margin-top: 2rem;
-  }
+//   .main {
+//     color: ${({ theme: { color } }) => color.blue};
+//     font-size: ${({ theme: { font } }) => font.size.semiMedium};
+//     margin-left: 6.5rem;
+//     margin-top: 2rem;
+//   }
 
-  li {
-    font-size: ${({ theme: { font } }) => font.size.semiMedium};
-    margin-left: 9rem;
-    margin-top: 2rem;
-  }
+//   li {
+//     font-size: ${({ theme: { font } }) => font.size.semiMedium};
+//     margin-left: 9rem;
+//     margin-top: 2rem;
+//   }
 
-  .sub {
-    color: ${({ theme: { color } }) => color.grey};
-    font-size: ${({ theme: { font } }) => font.size.micro};
-    font-weight: ${({ theme: { font } }) => font.weight.light};
-    margin-left: 12rem;
-    margin-top: 2rem;
-  }
-`;
+//   .sub {
+//     color: ${({ theme: { color } }) => color.grey};
+//     font-size: ${({ theme: { font } }) => font.size.micro};
+//     font-weight: ${({ theme: { font } }) => font.weight.light};
+//     margin-left: 12rem;
+//     margin-top: 2rem;
+//   }
+// `;
 
 export {
   StyledRoot,
   LoginText,
-  ProfileBox,
-  ProfileText,
-  ProfileImg,
   CompareMainBox,
   CompareMainText,
   CompareBox,
@@ -213,8 +178,4 @@ export {
   MeanScoreBox,
   MeanScoreText,
   MeanScore,
-  CompareResult,
-  MainMajorCompare,
-  MajorCompareText,
-  MajorCompareBox,
 };

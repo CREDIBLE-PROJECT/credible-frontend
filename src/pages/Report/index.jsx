@@ -62,7 +62,7 @@ function Report() {
       </DetailText>
       <CauseContent>
         <CauseText>
-          <pre>김이화님의 </pre>
+          <pre>김사보님의 </pre>
           <pre className="underline">신용점수 도출 예상 원인</pre>
           <pre>은</pre>
         </CauseText>

@@ -1,17 +1,58 @@
 /* eslint-disable import/no-unresolved */
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { MainImage } from 'assets';
-import { Menu } from 'components';
-import { StyledRoot, LoginText, MainImg, ImgText } from './style';
+import { Menu, Loading } from 'components';
+import {
+  StyledRoot,
+  TopBar,
+  ModalButton,
+  ModalBackdrop,
+  ModalView,
+  CloseButton,
+  LoginText,
+  MainImg,
+  ImgText,
+} from './style';
 
 function Main() {
   const navigate = useNavigate();
 
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+    return () => {
+      clearTimeout(timer);
+    };
+  });
+
+  const [modal, setModal] = useState(false);
+
+  const toggleModal = () => {
+    setModal(!modal);
+  };
+
   return (
     <StyledRoot>
-      <LoginText>
-        {/* <p
+      {modal ? (
+        <ModalBackdrop onClick={toggleModal}>
+          {loading ? <Loading /> : null}
+          {/* <Loading>{loading}</Loading> */}
+          <ModalView onClick={toggleModal}>
+            <p>신용정보를 불러왔습니다.</p>
+            <CloseButton onClick={toggleModal}>확인</CloseButton>
+          </ModalView>
+        </ModalBackdrop>
+      ) : null}
+      <TopBar>
+        <ModalButton onClick={toggleModal}>
+          {modal ? '' : '내 신용정보 불러오기'}
+        </ModalButton>
+        <LoginText>
+          {/* <p
           role="presentation"
           onClick={() => {
             navigate('/login');
@@ -27,15 +68,17 @@ function Main() {
         >
           회원가입
         </p> */}
-        <p
-          role="presentation"
-          onClick={() => {
-            navigate('/login');
-          }}
-        >
-          로그아웃
-        </p>
-      </LoginText>
+          <p
+            role="presentation"
+            onClick={() => {
+              navigate('/login');
+            }}
+          >
+            로그아웃
+          </p>
+        </LoginText>
+      </TopBar>
+
       <Menu />
       <MainImg src={MainImage} alt="메인이미지" />
       <ImgText>

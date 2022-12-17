@@ -2,6 +2,8 @@
 export { default as MainLogo } from './Logo/OfficialLogo.svg';
 export { default as LoginLogo } from './Logo/LoginLogo.svg';
 export { default as MainImage } from './Logo/MainImage.svg';
+/* Spinner */
+export { default as SpinnerImg } from './Loading/SpinnerImg.svg';
 /* Profile */
 export { default as Profile } from './Profile/ProfileImg.svg';
 /* Report */

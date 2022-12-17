@@ -34,6 +34,7 @@ const DetailText = styled.p`
   position: absolute;
   left: 38rem;
   top: 108.8rem;
+  cursor: pointer;
 `;
 
 const CauseContent = styled.div`

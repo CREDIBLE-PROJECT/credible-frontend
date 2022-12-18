@@ -39,7 +39,6 @@ function Details() {
       <CommonProfile />
       <Result />
       <DetailText>알고 싶은 항목을 클릭해주세요</DetailText>
-      {/* <DefaultText>&gt;&gt; 알고싶은 항목을 클릭해 주세요.</DefaultText> */}
     </StyledRoot>
   );
 }

@@ -15,7 +15,7 @@ function Item4() {
         <p className="sub">다른 사람과 비교한 &apos;나의 대출 상환기간&apos;</p>
       </DetailTitle>
       <DetailBoxS>
-        <p>나의 대출중인 금액은 상위 76% 입니다.</p>
+        <p>나의 대출 상환기간은 상위 76% 입니다.</p>
       </DetailBoxS>
     </StyledRoot>
   );

@@ -52,21 +52,21 @@ function Main() {
         </ModalButton>
         <LoginText>
           {/* <p
-          role="presentation"
-          onClick={() => {
-            navigate('/login');
-          }}
-        >
-          로그인
-        </p>
-        <p
-          role="presentation"
-          onClick={() => {
-            navigate('/join');
-          }}
-        >
-          회원가입
-        </p> */}
+            role="presentation"
+            onClick={() => {
+              navigate('/login');
+            }}
+          >
+            로그인
+          </p>
+          <p
+            role="presentation"
+            onClick={() => {
+              navigate('/join');
+            }}
+          >
+            회원가입
+          </p> */}
           <p
             role="presentation"
             onClick={() => {

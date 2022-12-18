@@ -91,10 +91,6 @@ function Report() {
             <li>수입을 올릴 수 있는 방법을 찾으세요.</li>
           </ol>
         </TipDetail>
-        {/* <TipExpect>
-          <p className="black">상승 예상 점수</p>
-          <p className="blue">802점</p>
-        </TipExpect> */}
       </TipContent>
     </StyledRoot>
   );

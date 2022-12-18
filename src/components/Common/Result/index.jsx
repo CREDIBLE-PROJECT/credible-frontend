@@ -89,7 +89,7 @@ function Result() {
     <StyledRoot>
       <ReportMain>
         <pre>김사보님의 AI 신용점수는 </pre>
-        <pre className="blue">753점</pre>
+        <pre className="blue">866점</pre>
         <pre>입니다.</pre>
       </ReportMain>
       <ReportImg src={Receipt} alt="영수증 이미지" />

@@ -40,7 +40,6 @@ function Main() {
       {modal ? (
         <ModalBackdrop onClick={toggleModal}>
           {loading ? <Loading /> : null}
-          {/* <Loading>{loading}</Loading> */}
           <ModalView onClick={toggleModal}>
             <p>신용정보를 불러왔습니다.</p>
             <CloseButton onClick={toggleModal}>확인</CloseButton>

@@ -15,6 +15,9 @@ import {
   MeanScoreBox,
   MeanScoreText,
   MeanScore,
+  MainMajorCompare,
+  MajorCompareText,
+  MajorCompareBox,
 } from './style';
 
 function Compare() {
@@ -56,36 +59,31 @@ function Compare() {
         <CompareBox>
           <CompareMain>
             <MyScoreBox>
-              <MyScoreText>김이화님의 신용점수</MyScoreText>
-              <MyScore>753점</MyScore>
+              <MyScoreText>김사보님의 신용점수</MyScoreText>
+              <MyScore>866점</MyScore>
             </MyScoreBox>
             <MeanScoreBox>
               <MeanScoreText>20대 여성 중 당신의 신용점수</MeanScoreText>
               <MeanScore>상위 47%</MeanScore>
             </MeanScoreBox>
           </CompareMain>
-          {/* <CompareResult>
-            김이화님은 20대 여성 중 상위 10%에 속해있습니다.
-          </CompareResult> */}
         </CompareBox>
       </CompareMainBox>
-      {/* <MainMajorCompare>
+      <MainMajorCompare>
         <MajorCompareText>나의 주요 비교항목</MajorCompareText>
         <MajorCompareBox>
-          <p className="main">1. 최근 6개월간 문의 건수 많음 </p>
+          <p className="main">1. 현 직장 근무 기간이 상대적으로 짧습니다. </p>
           <ol>
-            <li>✔ 나의 최근 6개월간 문의 건수 비율은 70.1%예요</li>
-            <li>✔ 나와 같은 20대 여성들의 평균 비율은 10.5%예요</li>
+            <li>✔ 나의 근무기간은 현재 0개월 이에요</li>
+            <li>✔ 나와 같은 20대 여성들의 평균 근무기간은 44.6개월 이에요</li>
           </ol>
-          <p className="sub">→ 상세 설명 보러가기</p>
-          <p className="main">2. 연체되지 않은 거래의 비율 낮음 </p>
+          <p className="main">2. 현재 본인의 수입이 비교적 낮습니다. </p>
           <ol>
-            <li>✔ 나의 연체되지 않은 거래의 비율은 65.0%예요</li>
-            <li>✔ 나와 같은 20대 여성들의 평균 비율은 94.2%예요</li>
+            <li>✔ 현재 나의 월 평균 수입은 265만원 이에요.</li>
+            <li>✔ 나와 같은 20대 여성들의 월 평균 수입은 435만원 이에요.</li>
           </ol>
-          <p className="sub">→ 상세 설명 보러가기</p>
         </MajorCompareBox>
-      </MainMajorCompare> */}
+      </MainMajorCompare>
     </StyledRoot>
   );
 }

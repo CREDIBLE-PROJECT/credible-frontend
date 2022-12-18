@@ -68,7 +68,7 @@ const DetailBoxS = styled.div`
   top: 44rem;
 
   p {
-    margin-left: 6.5rem;
+    margin-left: 9.5rem;
     margin-top: 4.3rem;
   }
 `;

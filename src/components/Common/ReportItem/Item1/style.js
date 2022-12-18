@@ -50,7 +50,7 @@ const DetailBoxF = styled.div`
   top: 14rem;
 
   p {
-    margin-left: 3.2rem;
+    margin-left: 3rem;
     margin-top: 4.3rem;
   }
 `;

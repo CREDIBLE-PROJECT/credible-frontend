@@ -9,13 +9,13 @@ function Item2() {
         <p className="main">현재 나의 수입</p>
       </DetailTitle>
       <DetailBoxF>
-        <p>현재 나의 수입은 연간 3,189,000원 입니다.</p>
+        <p>현재 나의 수입은 월간 2,652,000원 입니다.</p>
       </DetailBoxF>
       <DetailTitle>
         <p className="sub">다른 사람과 비교한 &apos;나의 수입&apos;</p>
       </DetailTitle>
       <DetailBoxS>
-        <p>나의 대출중인 금액은 상위 52% 입니다.</p>
+        <p>나의 수입은 상위 52% 입니다.</p>
       </DetailBoxS>
     </StyledRoot>
   );

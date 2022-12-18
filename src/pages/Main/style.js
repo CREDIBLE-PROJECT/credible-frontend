@@ -97,6 +97,7 @@ const LoginText = styled.div`
   font-family: 'Noto Sans', [monospace];
   font-size: ${({ theme: { font } }) => font.size.small};
   color: ${({ theme: { color } }) => color.grey};
+  cursor: pointer;
 
   p {
     margin-right: 2.4rem;
